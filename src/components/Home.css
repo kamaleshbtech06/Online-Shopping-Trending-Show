@@ -1,0 +1,467 @@
+.home {
+  background-color: #faf8f5;
+  color: #2c3e2e;
+}
+
+/* GENDER DEPARTMENT FILTER BAR */
+.gender-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  background: #f4f0ea;
+  border: 1px solid #d9d0c5;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.gender-filter-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2c3e2e;
+}
+
+.gender-pill {
+  background: #ffffff;
+  border: 1px solid #d9d0c5;
+  color: #2c3e2e;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gender-pill:hover,
+.gender-pill.is-active {
+  background: #2c3e2e;
+  color: #ffffff;
+  border-color: #2c3e2e;
+}
+
+.card__gender-badge {
+  position: absolute;
+  top: 1rem;
+  right: 3.5rem;
+  background: rgba(44, 62, 46, 0.85);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #f7f3ed 0%, #ebe4d8 100%);
+  padding: 4rem 0 5rem 0;
+  border-bottom: 1px solid #e2dad0;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.hero__badge {
+  display: inline-block;
+  background: #2c3e2e;
+  color: #f4f0ea;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.hero__title {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  line-height: 1.15;
+  color: #2c3e2e;
+  margin: 0 0 1.25rem 0;
+}
+
+.hero__body {
+  font-size: 1.1rem;
+  color: #594d42;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn--primary {
+  background: #2c3e2e;
+  color: #fff;
+  padding: 0.85rem 1.75rem;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn--primary:hover {
+  background: #1c281d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(44, 62, 46, 0.2);
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 2px solid #2c3e2e;
+  color: #2c3e2e;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn--ghost:hover {
+  background: #2c3e2e;
+  color: #fff;
+}
+
+.hero__image-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(44, 62, 46, 0.15);
+  max-height: 480px;
+}
+
+.hero__image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__floating-card {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid #e0d8cf;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.floating-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #c46d4e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero__floating-card h4 {
+  font-family: Georgia, serif;
+  margin: 0.2rem 0;
+  color: #2c3e2e;
+}
+
+.hero__floating-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #6b5e52;
+}
+
+/* SHOP */
+.shop {
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
+
+.shop__heading h2 {
+  font-family: Georgia, serif;
+  font-size: 2.25rem;
+  color: #2c3e2e;
+  margin: 0 0 0.25rem 0;
+}
+
+.shop__sub {
+  color: #7a6e65;
+  margin: 0 0 2rem 0;
+}
+
+.shop__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.shop__filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.shop__filter {
+  background: #ffffff;
+  border: 1px solid #d9d0c5;
+  color: #3b3027;
+  padding: 0.5rem 1.15rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shop__filter:hover,
+.shop__filter.is-active {
+  background: #2c3e2e;
+  color: #fff;
+  border-color: #2c3e2e;
+}
+
+.shop__secondary-filters {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2c3e2e;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-label select {
+  background: #fff;
+  border: 1px solid #d9d0c5;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #2c3e2e;
+}
+
+.shop__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5dfd7;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(44, 62, 46, 0.1);
+}
+
+.card__save {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e2dad0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #a09387;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.card__save.is-saved,
+.card__save:hover {
+  background: #fce8e6;
+  color: #e74c3c;
+  border-color: #f5b7b1;
+}
+
+.card__image {
+  position: relative;
+  height: 280px;
+  background: #f4f0ea;
+  overflow: hidden;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card__image img {
+  transform: scale(1.05);
+}
+
+.card__badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #2c3e2e;
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.card__quickview-btn {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 0.85rem;
+  right: 0.85rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #d9d0c5;
+  color: #2c3e2e;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+}
+
+.card:hover .card__quickview-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card__quickview-btn:hover {
+  background: #2c3e2e;
+  color: #fff;
+}
+
+.card__content {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__maker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8c7f73;
+  font-weight: 700;
+  margin: 0 0 0.2rem 0;
+}
+
+.card__name {
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  margin: 0 0 0.4rem 0;
+}
+
+.card__name a {
+  color: #2c3e2e;
+  text-decoration: none;
+}
+
+.card__material {
+  font-size: 0.82rem;
+  color: #6b5e52;
+  margin: 0 0 0.75rem 0;
+}
+
+.card__rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #d97706;
+  font-size: 0.9rem;
+}
+
+.card__reviews-count {
+  font-size: 0.8rem;
+  color: #8c7f73;
+}
+
+.card__footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0ebe4;
+  padding-top: 0.75rem;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #c46d4e;
+  margin: 0;
+}
+
+.card__link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2c3e2e;
+  text-decoration: none;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+
+.shop__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.shop__pagination button {
+  background: #fff;
+  border: 1px solid #d9d0c5;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #2c3e2e;
+  cursor: pointer;
+}
+
+.shop__pagination button.is-active,
+.shop__pagination button:hover {
+  background: #2c3e2e;
+  color: #fff;
+}

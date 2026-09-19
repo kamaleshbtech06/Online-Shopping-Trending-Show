@@ -1,0 +1,12 @@
+.about__intro { padding: 64px 32px 48px; max-width: 780px; }
+.about__title { font-size: clamp(1.9rem, 3.4vw, 2.6rem); margin: 16px 0 0; line-height: 1.15; }
+.about__intro .shelf { margin: 22px 0 22px; }
+.about__lead { color: var(--ink-soft); font-size: 1.05rem; max-width: 62ch; }
+.about__makers { padding: 40px 32px 96px; }
+.about__makers h2 { font-size: 1.5rem; }
+.about__rule { margin-top: 14px; margin-bottom: 32px; }
+.about__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.about__card h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.about__craft { font-family: var(--font-mono); font-size: 0.78rem; color: var(--teal); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 12px; }
+.about__note { color: var(--ink-soft); font-size: 0.92rem; }
+@media (max-width: 760px) { .about__grid { grid-template-columns: 1fr; } }

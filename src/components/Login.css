@@ -1,0 +1,12 @@
+.login { min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; padding: 48px 24px; }
+.login__panel { width: 100%; max-width: 380px; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 40px 36px; }
+.login__panel h1 { font-size: 1.6rem; }
+.login__sub { color: var(--ink-soft); font-size: 0.9rem; margin: 8px 0 0; }
+.login__rule { margin: 20px 0 24px; }
+.login__error { background: #fbe9e5; color: #9a3412; font-size: 0.85rem; padding: 10px 12px; border-radius: var(--radius); margin-bottom: 16px; }
+.login__form { display: flex; flex-direction: column; gap: 16px; }
+.login__form label { display: flex; flex-direction: column; font-size: 0.8rem; color: var(--ink-soft); gap: 6px; }
+.login__form input { border: 1px solid var(--line); border-radius: var(--radius); padding: 11px 12px; font-size: 0.92rem; font-family: var(--font-body); color: var(--ink); background: var(--paper); }
+.login__submit { margin-top: 6px; width: 100%; }
+.login__switch { margin-top: 24px; font-size: 0.85rem; color: var(--ink-soft); text-align: center; }
+.login__switch button { background: none; border: none; color: var(--teal); padding: 0; font-size: 0.85rem; }

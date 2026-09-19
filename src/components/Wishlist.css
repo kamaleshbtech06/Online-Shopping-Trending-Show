@@ -1,0 +1,12 @@
+.wishlist { padding: 48px 32px 96px; }
+.wishlist h1 { font-size: 1.9rem; }
+.wishlist__rule { margin-top: 14px; margin-bottom: 32px; }
+.wishlist__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.wishlist__card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: var(--radius); margin-bottom: 12px; }
+.wishlist__card .card__name { display: block; font-size: 1rem; margin: 4px 0; }
+.wishlist__actions { display: flex; gap: 10px; margin-top: 12px; }
+.wishlist--empty { text-align: center; padding: 96px 32px; }
+.wishlist--empty h1 { font-size: 1.6rem; margin-bottom: 8px; }
+.wishlist--empty p { color: var(--ink-soft); margin-bottom: 24px; }
+@media (max-width: 760px) { .wishlist__grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .wishlist__grid { grid-template-columns: 1fr; } }
